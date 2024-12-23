@@ -2,5 +2,5 @@
 
 public interface ITeacher
 {
-    
+    string GetInfo();
 }
