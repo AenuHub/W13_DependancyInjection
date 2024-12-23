@@ -14,6 +14,19 @@ Defines the base interface for the `Teacher` class with:
 - `string LastName { get; set; }`
 - `string GetInfo();`
 
+### Classes:
+
+#### 1. `Teacher`
+Represents a teacher with the following properties:
+- `string FirstName { get; set; }`
+- `string LastName { get; set; }`
+- `string GetInfo();` -> Returns a formatted string containing the teacher's full name.
+
+#### 2. `ClassRoom`
+Represents a classroom that depends on a `Teacher` instance.
+- `ITeacher Teacher { get; set; }`
+- `string GetTeacherInfo();` -> Returns a formatted string containing the classroom's teacher's full name.
+
 ### Features
 
 1. **Constructor Injection**
